@@ -1,0 +1,20 @@
+{
+  "name": "stripe-payment",
+  "version": "1.0.0",
+  "description": "Sample App for Working with Netlify Lambda Functions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:lambda": "netlify-lambda serve functions",
+    "build:lambda": "netlify-lambda build functions",
+    "prod": "npm run build; npm run build:lambda"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "netlify-lambda": "^1.3.3",
+    "stripe": "^6.25.1"
+  },
+  "devDependencies": {}
+}

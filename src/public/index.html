@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Stripe Payment</title>
+  </head>
+  <body>
+    <h2>Stripe Checkout Example</h2>
+
+    <form action="http://localhost:9000/payment" method="POST">
+      <script
+        src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="pk_test_RyngeFx5cKMB4A9r8gZfyoGO"
+        data-amount="999"
+        data-name="My First Strip Thing!"
+        data-description="Pay me some money!"
+        data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto"
+        data-zip-code="true"
+      ></script>
+      <!-- <button type="submit">Buy!</button> -->
+    <!-- </form>
+    
+  </body>
+</html>
